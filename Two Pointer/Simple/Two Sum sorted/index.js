@@ -9,7 +9,7 @@ function twoSum(nums, target) {
 
     while (left < right) {
         const sum = nums[left] + nums[right];
-
+        console.log(nums[left] , nums[right])
         if (sum === target) {
             return [nums[left], nums[right]];   // Found the pair that sums up to the target
         } else if (sum < target) {
@@ -17,13 +17,14 @@ function twoSum(nums, target) {
         } else {
             right--;                            // Move the right pointer to the left
         }
+
     }
 
     return [];                              // No pair found that sums up to the target
 }
 
 
-console.log(twoSum([2, 7, 11, 16], 17));
+console.log(twoSum([2, 7, 12, 16], 19));
 
 
 

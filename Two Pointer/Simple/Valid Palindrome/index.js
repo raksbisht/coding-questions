@@ -33,7 +33,7 @@ Facebook
 // TWO POINTER APPROACH
 
 
-function isPalindrome(s) {
+function isPalindrome1(s) {
     // Preprocess the input string
     s = s.toLowerCase().replace(/[^a-z0-9]/g, '');
 
@@ -52,7 +52,7 @@ function isPalindrome(s) {
 
 
 
-function isPalindrome(str) {
+function isPalindrome1(str) {
     // Remove non-alphanumeric characters and convert to lowercase
     str = str.toLowerCase().replace(/[^a-z0-9]/g, '');
 
@@ -72,13 +72,32 @@ function isPalindrome(str) {
     return true;
 }
 
-function isPalindrome(str) {
+function isPalindrome1(str) {
     // Remove non-alphanumeric characters and convert to lowercase
     str = str.replace(/[^0-9a-z]/gi, '').toLowerCase();
 
     // Compare the original string to its reverse
     return str === str.split('').reverse().join('');
 }
+var isPalindrome = function(s) {
+    s = s.toLowerCase().replace(/[^a-z0-9]/g, '');
+
+
+    let left=0;
+    let right=s.length-1;
+
+    while(left<right){
+        if(s[left]!==s[right]){
+            return false;
+        }
+
+        left++;
+        right--;
+    }
+
+    return true;
+
+};
 console.log(isPalindrome("A man, a plan, a canal: Panama")); // true
 console.log(isPalindrome("race a car")); // false
 console.log(isPalindrome(" ")); // true

@@ -12,4 +12,8 @@ function findSubstringIndices(str, substr) {
 }
 
 
+console.log(findSubstringIndices('abcdeddabc', 'abc'));
+console.log(findSubstringIndices('abcde', 'cde'));
+
+
 
