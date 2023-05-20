@@ -17,7 +17,7 @@ Nagarro
 Media.net
  */
 
-function isAnagram1(s, t) {
+function isAnagram(s, t) {
     if (s.length !== t.length) {
         return false;
     }
@@ -44,7 +44,7 @@ function isAnagram1(s, t) {
 }
 
 
-function isAnagram2(s, t) {
+function isAnagram(s, t) {
     if (s.length !== t.length) {
         return false;
     }
