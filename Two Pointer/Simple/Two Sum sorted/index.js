@@ -1,5 +1,5 @@
 /*
-Let's say we want to find the pair of numbers in a sorted array that sums up to a given target value.
+Let's say we want to find the pair of numbers in a SORTED array that sums up to a given target value.
 
  */
 

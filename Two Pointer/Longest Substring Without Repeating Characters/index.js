@@ -35,7 +35,7 @@ function lengthOfLongestSubstring(s) { //two pointer
 
     return maxLength;
 }
-
+1234
 
 function lengthOfLongestSubstring(s) { // sliding window technique
     const n = s.length;
