@@ -69,27 +69,6 @@ function isAnagram(s, t) {
     return true;
 }
 
-function isAnagram(s, t) {
-
-    if(s.length !=t.length){return false}
-
-    let sChars={};
-    let tChars={};
-
-    for(let i=0; i <s.length;i++){
-        sChars[s[i]]=(sChars[s[i]]||0)+1;
-        tChars[t[i]]=(tChars[t[i]]||0)+1;
-    }
-    console.log(sChars,tChars);
-    for(let index in sChars){
-        if(sChars[index]!=tChars[index]){
-            return false;
-        }
-    }
-
-    return true;
-
-};
 console.log(isAnagram('anagram','nagaram'));
 console.log(isAnagram('rat','car'));
 console.log(isAnagram('SFSDF','SDFSD'));

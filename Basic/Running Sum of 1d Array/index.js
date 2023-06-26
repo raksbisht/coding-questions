@@ -43,6 +43,18 @@ var runningSum = function(nums) {
 
 
 
+
+// TODO: Optimized  solution
+
+var runningSum = function(nums) {
+    for (let i = 1; i < nums.length; i++) {
+        nums[i] += nums[i - 1]; // Update each element by adding the previous running sum
+    }
+
+    return nums;
+};
+
+
 // TODO: Best solution
 var runningSum = function(nums) {
     const newArray = [nums[0]]; // Initialize the newArray with the first element of nums
@@ -56,12 +68,4 @@ var runningSum = function(nums) {
     return newArray;
 };
 
-// TODO: Optimized  solution
-
-var runningSum = function(nums) {
-    for (let i = 1; i < nums.length; i++) {
-        nums[i] += nums[i - 1]; // Update each element by adding the previous running sum
-    }
-
-    return nums;
-};
+console.log(runningSum([1,2,3,4]))
